@@ -1,0 +1,11 @@
+<FilesMatch \.php>
+    SetHandler "proxy:unix:/var/run/php/php8.2-fpm.sock|fcgi://localhost/"
+</FilesMatch>
+php_value date.timezone 'Asia/Jakarta'
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+Options -Indexes
