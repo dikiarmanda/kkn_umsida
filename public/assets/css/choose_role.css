@@ -1,0 +1,89 @@
+/* Reset basic style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/background_umsida.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.role-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.brand-logo {
+    margin-bottom: 1.5rem;
+}
+
+.brand-logo img {
+    max-width: 300px;
+}
+
+h4 {
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+p {
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+/* Tombol role */
+.role-btn {
+    display: block;
+    background: #7597e7;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: background 0.3s ease;
+   
+}
+
+.role-btn:hover {
+    background: #3b5998;
+}
+
+/* Kalau tidak ada role */
+.alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .role-container {
+        padding: 1.5rem;
+    }
+    .brand-logo img {
+        max-width: 90px;
+    }
+}

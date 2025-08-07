@@ -3,7 +3,21 @@ echo $this->include('template/head');
 echo $this->include('template/navbar');
 ?>
 <div class="container-fluid page-body-wrapper">
-    <?= $this->include('template/sidebar') ?>
+    <?= $this->include('template/sidebar') ?> 
+    <?php
+        // Sidebar dinamis berdasarkan role aktif
+        $role = session('role_active');
+        if ($role === 'administrator') {
+            echo $this->include('template/sidebar/administrator');
+        } elseif ($role === 'dpl') {
+            echo $this->include('template/sidebar/dpl');
+        } elseif ($role === 'drpm') {
+            echo $this->include('template/sidebar/drpm');
+        } else {
+            echo $this->include('template/sidebar/default'); // fallback opsional
+        }
+    ?>
+    
     <div class="main-panel">
         <div class="content-wrapper">
             <?= $pagecontent ?>

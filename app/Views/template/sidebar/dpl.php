@@ -1,25 +1,25 @@
-<!-- DRPM
+<!-- DPL -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
             <a class="nav-link" href="index.html">
                 <i class="icon-grid menu-icon"></i>
-                <span class="menu-title">DRPM</span>
+                <span class="menu-title">DPL</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#menuKKN" aria-expanded="false" aria-controls="menuKKN">
                 <i class="icon-layout menu-icon"></i>
-                <span class="menu-title">Penilaian</span>
+                <span class="menu-title">Laporan KKN</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="menuKKN">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/basic_elements.html">Proses Penilaian</a>
+                        <a class="nav-link" href="pages/forms/basic_elements.html">Proses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/basic_elements.html">Verifikasi penilaian</a>
+                        <a class="nav-link" href="pages/forms/basic_elements.html">Cek</a>
                     </li>
                 </ul>
             </div>
@@ -27,17 +27,12 @@
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
                 <i class="icon-columns menu-icon"></i>
-                <span class="menu-title">Surat Izin</span>
+                <span class="menu-title">Perkembangan</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Surat Diproses</a></li>
-                </ul>
-            </div>
-            <div class="collapse" id="form-elements">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Surat Diterima</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
                 </ul>
             </div>
         </li>
@@ -110,190 +105,4 @@
             </a>
         </li>
     </ul>
-</nav> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</nav>

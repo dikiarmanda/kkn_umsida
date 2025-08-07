@@ -58,5 +58,7 @@ abstract class BaseController extends Controller
         $this->template = new Template();
         $this->db = Database::connect();
         // E.g.: $this->session = service('session');
+        //   $this->session = \Config\Services::session();
+        //   helper('session');
     }
 }
