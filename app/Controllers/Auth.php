@@ -53,6 +53,7 @@ class Auth extends BaseController
             $roleActive = $roles[0];
             session()->set('role_active', $roleActive);
 
+            // FIXME: ganti role administrator => admin
             if ($roleActive === 'administrator') {
                 return redirect()->to('/dashboard/administrator');
             } elseif ($roleActive === 'dpl') {
@@ -63,6 +64,10 @@ class Auth extends BaseController
                 return redirect()->to('/'); // Default jika role tidak dikenali
             }
         } 
+        // NOTE: urutan hak akses DRPM > Admin > DPL > Mahasiswa
+        // NOTE: semua menu admin bisa diakses DRPM
+        // NOTE: ada beberapa menu tambahan yang hanya bisa diakses DRPM ex: master data, plotting admin
+        // NOTE: admin bersifat periode sesuai timeline KKN
         // Jika punya lebih dari 1 role → pilih role dulu
         else {
             return redirect()->to('/choose-role');
